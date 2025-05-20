@@ -26,6 +26,8 @@
     "zod": "^3.25.7"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.19",
     "@types/node-fetch": "^2.6.12",
     "tsup": "^7.2.0",
     "typescript": "^5.4.3"

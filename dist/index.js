@@ -32,5 +32,13 @@ server.resource(
     }]
   })
 );
-var transport = new StdioServerTransport();
-await server.connect(transport);
+async function main() {
+  const transport = new StdioServerTransport();
+  await server.connect(transport);
+}
+main().catch(
+  (error) => {
+    console.error("Error starting server:", error);
+    process.exit(1);
+  }
+);
