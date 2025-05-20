@@ -1,12 +1,24 @@
 {
   "name": "walrus-ts-mcp",
   "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WalrusMCP/Walrus-TS-MCP.git"
+  },
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.4",
+    "@mysten/sui": "^1.29.1",
+    "fastmcp": "^1.27.7",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.25.7"
+  }
 }
