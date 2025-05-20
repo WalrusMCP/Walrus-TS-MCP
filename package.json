@@ -1,6 +1,6 @@
 {
   "name": "walrus-ts-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -8,8 +8,12 @@
   },
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "walrus-ts-mcp": "dist/index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup src/index.ts --format esm --dts --out-dir dist",
+    "prepublishOnly": "pnpm build"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +24,10 @@
     "fastmcp": "^1.27.7",
     "node-fetch": "^3.3.2",
     "zod": "^3.25.7"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.12",
+    "tsup": "^7.2.0",
+    "typescript": "^5.4.3"
   }
 }
